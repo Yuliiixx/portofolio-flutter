@@ -1,3 +1,4 @@
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ body {
     background: #080808;
     color: #fff;
 }
+/* Header */
 #header {
     width: 100%;
     height: 100vh;
@@ -20,6 +22,7 @@ body {
 .container {
     padding: 10px 10%;
 }
+/* Navigation */
 nav {
     display: flex;
     align-items: center;
@@ -50,6 +53,7 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
+/* Header Text */
 .header-text {
     margin-top: 20%;
     font-size: 30px;
@@ -62,7 +66,7 @@ nav ul li a:hover::after {
 .header-text h1 span {
     color: #ff004f;
 }
-/*-----------------about---------------*/
+/* About Section */
 #about {
     padding: 80px 0;
     color: #fff;
@@ -121,7 +125,7 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
     display: block;
 }
-/*-----------portfolio----------*/
+/* Portfolio Section */
 #portfolio {
     padding: 50px 0;
 }
@@ -190,7 +194,7 @@ nav ul li a:hover::after {
 .work .text a:hover {
     background: #ff1a66;
 }
-/*-----------service----------*/
+/* Service Section */
 #services {
     padding: 30px 0;
 }
@@ -228,91 +232,18 @@ nav ul li a:hover::after {
     background: #ff004f;
     transform: translateY(-10px);
 }
-/*------------portofolio------*/
-#portofolio {
+/* Contact Section */
+#contact {
     padding: 50px 0;
 }
-.work-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.work {
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.work img {
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
-}
-.layer {
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
-}
-.layer h3 {
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-.layer a {
-    margin-top: 20px;
-    color: #ff004f;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
-.work:hover img {
-    transform: scale(1.1);
-}
-.work:hover .layer {
-    height: 100%;
-}
-.btn {
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #ff004f;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #fff;
-    transition: background 0.5s;
-}
-.btn:hover {
-    background: #ff004f;
-}
-/*---------contact-------*/
-.contact-left {
-    flex-basis: 35%;
-}
+.contact-left,
 .contact-right {
-    flex-basis: 60%;
+    flex-basis: 50%;
 }
 .contact-left p {
     margin-top: 30px;
 }
-.contactleft p i {
+.contact-left p i {
     color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
@@ -331,10 +262,6 @@ nav ul li a:hover::after {
 .social-icons a:hover {
     color: #ff004f;
     transform: translateY(-5px);
-}
-.btn.btn2 {
-    display: inline-block;
-    background: #ff004f;
 }
 .contact-right form {
     width: 100%;
@@ -356,27 +283,18 @@ form .btn2 {
     margin-top: 20px;
     font-size: 18px;
     cursor: pointer;
+    background: #ff004f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
 }
-.copyright {
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #262626;
-    font-weight: 300;
-    margin-top: 20px;
+form .btn2:hover {
+    background: #ff1a66;
 }
-.copyright i {
-    color: #ff004f;
-}
-
-/*--------css for small screen--------*/
-nav .fas {
-    display: none;
-}
-@media only screen and (max-width:600px) {
-    #header {
-        background-image: url(Images/phone-backgroundme.png);
-    }
+/* Media Query for Small Screens */
+@media only screen and (max-width: 600px) {
+    /* Header */
     .header-text {
         margin-top: 100%;
         font-size: 16px;
@@ -384,6 +302,7 @@ nav .fas {
     .header-text h1 {
         font-size: 30px;
     }
+    /* Navigation */
     nav .fas {
         display: block;
         font-size: 25px;
@@ -413,30 +332,24 @@ nav .fas {
     nav ul li a::after {
         display: none;
     }
-    .text a {
-        padding: 10px 30px;
+    /* Portfolio Section */
+    #portfolio {
+        padding: 30px 0;
     }
-    .row {
-        flex-direction: column;
+    .work-list {
+        grid-gap: 20px;
     }
-    .about-col-1,
-    .about-col-2 {
-        flex-basis: 100%;
-        margin: 20px 0;
+    .work {
+        padding: 15px;
     }
-    .services-list div {
-        padding: 20px;
+    .work img {
+        margin-bottom: 10px;
     }
-    .contact-left,
-    .contact-right {
-        flex-basis: 100%;
+    .layer h3 {
+        font-size: 18px;
     }
-    .social-icons a {
-        font-size: 25px;
-    }
-    .btn.btn2 {
-        width: 100%;
-        padding: 14px 20px;
-        text-align: center;
+    .layer a {
+        font-size: 14px;
+        line-height: 40px;
     }
 }
