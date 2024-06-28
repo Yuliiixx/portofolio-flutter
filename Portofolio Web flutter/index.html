@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mobile Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Mobile Developer</span></h1>
+                <p>Specializing in creating beautiful and functional mobile applications</p>
+            </div>
+        </div>
+    </header>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/work-3.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me </h1>
+                    <p>
+                       My name is Yulianti. As an enthusiastic Mobile Developer, I am committed to developing innovative and user-friendly
+                        mobile applications.
+                        With a strong foundation in the Dart programming language and experience using the Flutter
+                        framework,
+                        I am ready to contribute to a dynamic development team and continuously learn from seasoned
+                        professionals.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br> Dart, PHP, Python </li>
+                            <li><span>Frameworks</span><br> Flutter, Laravel </li>
+                            <li><span>Development Tools</span><br> Visual Studio Code, Android Studio, Git </li>
+                            <li><span>Design and Prototyping Tools</span><br> Figma, Adobe </li>
+                            <li><span>Other</span><br>RESTful APIs, JSON, State Management (Bloc) </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>PT. Raken Prima Perkasa</span><br> Junior Mobile Developer, Design Grafis </li>
+                            <li><span>PT. Garuda Cyber Indonesia</span><br> Magang Mobile Developer </li>
+                            <li><span>PT. Prima Gravika</span><br>Design Grafis </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - 2024</span><br> D4 Teknologi Rekayasa Perangkat Lunak </li>
+                            <li><span>2017 - 2020</span><br> D3 Teknik Komputer </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Mobile Developer</h2>
+                    <p>As a Mobile Developer, I specialize in creating innovative and user-friendly 
+                        mobile applications using Dart and Flutter, 
+                        with experience in integrating backend services using PHP and managing databases with MySQL.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Web Developer</h2>
+                    <p>As a Web Developer, I have expertise in developing dynamic and robust web 
+                        applications using the Laravel framework and MySQL, implementing CRUD operations, 
+                        RESTful APIs, and ensuring secure user authentication and authorization.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>UI/UX Designer</h2>
+                    <p> As a UI/UX Designer, I focus on creating responsive and user-centric designs using Figma, 
+                        conducting user research, wireframing, 
+                        prototyping, and user testing to enhance the overall user experience.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">New Portfolio</h1>
+            <div class="portfolio">
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Images/1.png" alt="Project Image 1">
+                        <div class="text">
+                            <h3>Aplikasi Kejaksaan Sumatera Barat</h3>
+                            <p>Aplikasi ini terdiri atas 2 role, yaitu admin dan user. Masyarakat Sumatera Barat sebagai user dapat mengadukan beberapa laporan ke kejaksaan Sumbar dengan menggunakan aplikasi ini. Sedangkan pihak kejaksaan sebagai admin dapat melihat semua pengaduan yang dilaporkan oleh masyarakat Sumatera Barat agar segera diproses. Project ini dalam tahap pembuatan dan masih diproses sampai sekarang.</p>
+                            <a href="https://drive.google.com/file/d/1JVg8wHPt4pFMTGz1tie1bbPrZKf1QvwI/view?usp=sharing" target="_blank">Demo</a>
+                        </div>
+                    </div>
+                    <!-- Tambahkan lebih banyak proyek jika diperlukan -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>antiyuli2828@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>081266673375</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-fa-linkedin"></i></a>
+                    </div>
+                    <a href="Images/CV-Yulianti-Mobile-Developer.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Yuli. Made with <i class="fas fa-heart"></i>heart</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
